@@ -1,0 +1,6 @@
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje1deneme/proje1deneme/bin/Debug/proje1deneme.exe
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje1deneme/proje1deneme/bin/Debug/proje1deneme.pdb
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje1deneme/proje1deneme/obj/x86/Debug/proje1deneme.csprojAssemblyReference.cache
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje1deneme/proje1deneme/obj/x86/Debug/proje1deneme.csproj.CoreCompileInputs.cache
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje1deneme/proje1deneme/obj/x86/Debug/proje1deneme.exe
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje1deneme/proje1deneme/obj/x86/Debug/proje1deneme.pdb
