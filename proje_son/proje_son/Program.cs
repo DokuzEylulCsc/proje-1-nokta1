@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace proje1deneme
+namespace proje_son
 {
     class MainClass
     {
