@@ -1,0 +1,6 @@
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje_son/proje_son/bin/Debug/proje_son.exe
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje_son/proje_son/bin/Debug/proje_son.pdb
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje_son/proje_son/obj/x86/Debug/proje_son.csprojAssemblyReference.cache
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje_son/proje_son/obj/x86/Debug/proje_son.csproj.CoreCompileInputs.cache
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje_son/proje_son/obj/x86/Debug/proje_son.exe
+/Users/simgeyvs/Documents/GitHub/proje-1-nokta1/proje_son/proje_son/obj/x86/Debug/proje_son.pdb
