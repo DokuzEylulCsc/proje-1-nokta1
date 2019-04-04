@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{13E43349-47C5-4F7A-9FA5-C36EFE1DB552}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="musteriler.cs">
+    <Files>
+      <File FileName="musteriler.cs" Line="5" Column="12" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="proje1deneme" expanded="True">
+            <Node name="Solution Items" expanded="True" selected="True" />
+            <Node name="proje1deneme" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.proje1deneme FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
