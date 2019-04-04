@@ -2,7 +2,7 @@
 
 namespace proje1deneme
 {
-    public class Musteriler
+    public class Musteriler // sadasad
     {
 
     }
