@@ -1,5 +1,4 @@
 ﻿<Properties StartupConfiguration="{B484FEB3-C79C-4F23-87E8-F7F5F0A094D0}|Default">
-  <MonoDevelop.Ide.ItemProperties.nesneprojee____ FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
       <File FileName="otel.cs" Line="31" Column="19" />
@@ -11,10 +10,7 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="proje_son" expanded="True">
-            <Node name="nesneprojee__" expanded="True" />
-            <Node name="proje_son" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="proje_son" selected="True" />
           </Node>
         </State>
       </Pad>

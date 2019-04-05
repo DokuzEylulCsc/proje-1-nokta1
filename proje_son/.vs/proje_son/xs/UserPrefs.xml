@@ -10,7 +10,9 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="proje_son" expanded="True">
-            <Node name="proje_son" expanded="True" selected="True" />
+            <Node name="proje_son" expanded="True">
+              <Node name="rezervasyon.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

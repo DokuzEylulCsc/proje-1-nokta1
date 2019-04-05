@@ -6,47 +6,53 @@ namespace proje_son
     {
         public static void Main(string[] args)
         {
-           
+
             String A;
             int secim;
-            int kacinci=0;
+           
             Console.WriteLine("Hosgeldiniz:");
             Console.WriteLine("Yapmak istediğiniz işlemi seçiniz..");
             Console.WriteLine("1-Yeni Rezervasyon");
             Console.WriteLine("2-Rezervasyon Sil:");
             Console.WriteLine("3-Odaların Doluluk Oranlarını Göster");
+            Console.WriteLine("Ana Menuye Donmek İcin E harfine Basınız.");
             secim = Convert.ToInt16(Console.ReadLine());
 
-            if(secim==1)  // rezervasyon yapma seceneği
-            {    int x;
-                rezervasyon r =  new rezervasyon();
+            if (secim == 1)  // rezervasyon yapma seceneği
+            {
+
+                rezervasyon r = new rezervasyon();
                 Console.WriteLine("Adınızı ve Soyadınızı Giriniz:");
                 A = Console.ReadLine();
-               
-                kacinci++; //kacıncı rezervasyon oldugunu tutuyor.
+
+                
                 Console.WriteLine("--------------------------------------------------------------");
                 Console.WriteLine("***Tek yataklı odalarımızın numaraları 1-10 arasındadır.***");
                 Console.WriteLine("***Cift yataklı odalarımızın numaraları 11-20 arasındadır.***");
                 Console.WriteLine("--------------------------------------------------------------");
                 Console.WriteLine("Secmek istediginiz oda numarasını giriniz");
-
-                x = Console.Read();
+                int x;
+                x = Convert.ToInt16(Console.ReadLine());
                 r.Rezerve(x);
 
 
             }
-            if(secim==2)//rezervasyon iptal
+            if (secim == 2)//rezervasyon iptal
             {
-
+                rezervasyon r = new rezervasyon();
                 Console.WriteLine("Rezerve ettiğinin oda numarasını giriniz");
-               
-                otel o1 = new otel();
-               
+                int x;
+                x = Convert.ToInt16(Console.ReadLine());
+                r.Rezİp(x);
             }
-            if(secim==3)
+            if (secim == 3)
             {
                 rezervasyon r1 = new rezervasyon();
                 r1.DolulukSor();
+            }
+            if(secim=='M')
+            {
+
             }
         }
     }

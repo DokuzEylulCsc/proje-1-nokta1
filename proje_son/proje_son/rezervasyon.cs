@@ -5,9 +5,9 @@ namespace proje_son
     {
        
         public void Rezerve(int x)
-        { 
-            otel o = new otel();
-            o.Rezgonder(x);
+        {
+            otel o1 = new otel();
+            o1.Rezgonder(x);
 
         }
         public void Rezİp(int x)
@@ -22,5 +22,6 @@ namespace proje_son
             otel o2 = new otel();
             o2.DolulukOrani();
         }
+        //public void AnaMenü();
     }
 }

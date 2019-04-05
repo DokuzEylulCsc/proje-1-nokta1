@@ -3,27 +3,30 @@ namespace proje_son
 {
     public class oda:otel
     {
-        otel o = new otel();
-        public void RezYap(int x)  //Rezervasyon gerçekleştiriliyor.
+       
+
+
+            
+     public void RezYap(int x)  //Rezervasyon gerçekleştiriliyor.
         {
             for (int i = 0; i < 10; i++)   //
             {
                 if (x == TekKisilik[i]) //oda rezerve ediliyor. ve 100 e esitleniyor.
                 {
-                    rezervasyon r = new rezervasyon();
-                    TekKisilik[i] = 100;
-                    Console.Write("Sectiginiz" + i + "numaralı odayı rezerve ettiniz...");
-                    Console.WriteLine(i);
-                }
-               
-            }
 
-            for (int  j= 11; j < 20; j++)//
+                    TekKisilik[i] = 100;
+                    Console.WriteLine("Sectiginiz" + (  i+1  ) + "numaralı odayı rezerve ettiniz...");
+                   
+                }
+
+            }
+            Console.WriteLine(TekKisilik[5]);
+            for (int  j= 0; j < 10; j++)//
             {
                 if (x == CiftKisilik[j])
                 {
                     CiftKisilik[j] = 100;
-                    Console.Write("Sectiginiz" + j + "numaralı odayı rezerve ettiniz...");
+                    Console.WriteLine("Sectiginiz" + j + "numaralı odayı rezerve ettiniz...");
                 }
                    
                 }
