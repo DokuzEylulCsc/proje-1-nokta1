@@ -14,12 +14,23 @@ namespace proje_son
                 if (x == TekKisilik[i]) //oda rezerve ediliyor. ve 100 e esitleniyor.
                 {
 
+                  
+
+                    if (TekKisilik[i] == 100)
+                    {
+                        Console.WriteLine("Sectiginiz" + "" + i + "" + " numaralı oda rezerve EDİLEMEZ!!!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sectiginiz" + "" + i + "" + "numaralı odayı rezerve ettiniz :)");
+                    }
+
                     TekKisilik[i] = 100;
-                    Console.WriteLine("Sectiginiz" + (  i+1  ) + "numaralı odayı rezerve ettiniz...");
-                   
                 }
 
+
             }
+
             Console.WriteLine(TekKisilik[5]);
             for (int  j= 0; j < 10; j++)//
             {
@@ -31,10 +42,11 @@ namespace proje_son
                    
                 }
 
-            Console.WriteLine("Rezerve Etmek İstediğiniz Oda Doludur!!");
 
         }
-        public int Rezİptal(int m)// rez iptali gerçekleştiriliyor.
+
+
+        public void Rezİptal(int m)// rez iptali gerçekleştiriliyor.
         {
             for (int i = 0; i < 10; i++)
             {
@@ -50,7 +62,8 @@ namespace proje_son
                     CiftKisilik[i] = i;
                 }
             }
-            return 0;
+           
+
         }
 
     }
