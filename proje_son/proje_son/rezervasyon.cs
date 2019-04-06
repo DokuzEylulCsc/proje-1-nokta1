@@ -7,10 +7,10 @@ namespace proje_son
         public void Rezerve(int x)
         {
             otel o1 = new otel();
-            o1.Rezgonder(x);
+          o1.Rezgonder(x);
 
         }
-        public void Rezİp(int x)
+        public  void Rezİp(int x)
         {
             otel o1 = new otel();
             o1.Rezİptalgonder(x);
@@ -19,9 +19,9 @@ namespace proje_son
 
         public void DolulukSor()
         {
-            otel o2 = new otel();
-            o2.DolulukOrani();
+            otel o1 = new otel();
+            o1.DolulukOrani();
         }
-        //public void AnaMenü();
+
     }
 }

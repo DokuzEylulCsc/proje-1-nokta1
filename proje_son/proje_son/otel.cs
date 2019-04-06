@@ -1,32 +1,16 @@
 ﻿using System;
 namespace proje_son
 {
-    public class otel
+    public  class otel
     {
 
-        public int[] TekKisilik = new int[11];
+        public static int[] TekKisilik = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-        public int[] CiftKisilik = new int[11];
+        public static int[] CiftKisilik = { 0, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
-        public otel()
-        {
-            int a = 1;
-            int b = 11;
-            for (int i = 1; i < 11; i++)
-            {
-                TekKisilik[i] = a;
-                a++;
-            }
-            for (int j = 1; j < 11; j++)
-            {
-                CiftKisilik[j] = b;
-                b++;
-            }
-        }
+         
 
-
-
-        public void Rezgonder(int x)  //Rezervasyon oda classına  gönderiliyor.
+        public  void Rezgonder(int x)  //Rezervasyon oda classına  gönderiliyor.
         {
             oda o = new oda();
             o.RezYap(x);
@@ -44,18 +28,19 @@ namespace proje_son
         {
             int sayac = 0; //tek yataklı dolu oda sayısı
             int sayac2 = 0;//cift
-            int oran1;//toplam doluluk oranı
-            int oran2;//tek kisilik
-            int oran3;//cift kisilik
+            double oran1;//toplam doluluk oranı
+            double oran2;//tek kisilik
+            double oran3;//cift kisilik
             for (int i = 0; i < 10; i++)
             {
+
                 if (TekKisilik[i] == 100)   //oda dolu ise
                 {
                     sayac++;
 
                 }
             }
-            oran2 = sayac / 10;
+            oran2 = 10 / sayac;
             for (int i = 0; i < 10; i++)
             {
                 if (CiftKisilik[i] == 100)
@@ -64,8 +49,8 @@ namespace proje_son
 
                 }
             }
-            oran3 = sayac2 / 10;
-            oran1 = (sayac + sayac2) / 20;
+            oran3 = 10 / sayac2;
+            oran1 = 20 / (sayac + sayac2);
 
             Console.WriteLine("Oteldeki genel doluluk orani:" + +oran1);
             Console.WriteLine("Tek kisilik odalardaki doluluk orani:" + +oran2);
@@ -75,8 +60,11 @@ namespace proje_son
         }
 
     }
+   
+        }
 
-}
+
+
 
 
 
