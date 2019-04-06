@@ -20,7 +20,7 @@ namespace proje_son
                 {   
                     TekKisilik[i] = 100;
                     Console.WriteLine("Odamız müsait..");
-                    Console.WriteLine("***Sectiginiz" + "" + i +" numaralı odayı rezerve ettiniz ***");
+                    Console.WriteLine("***Sectiginiz " + "" + i +" numaralı odayı rezerve ettiniz ***");
                     a = i;
                 }
 
@@ -34,7 +34,7 @@ namespace proje_son
                     if (x == CiftKisilik[j])
                     {
                         CiftKisilik[j] = 100;
-                        Console.WriteLine("***Sectiginiz" + j + " numaralı odayı rezerve ettiniz...***");
+                        Console.WriteLine("***Sectiginiz " + x + " numaralı odayı rezerve ettiniz...***");
 
                     }
 
@@ -46,30 +46,32 @@ namespace proje_son
 
 
 
-       
 
-        
+
+
 
 
 
         public void Rezİptal(int m)// rez iptali gerçekleştiriliyor.
         {
-            Console.WriteLine(TekKisilik[5]);
+
             for (int i = 0; i < 10; i++)
             {
-                if (m == i&&TekKisilik[i]==100)
-                {  
+                if (m == i && TekKisilik[i] == 100)
+                {
                     TekKisilik[i] = i;//m ile kullanıcı kacinci odayı rezerve etmiş oldugunu giriyor.
                     Console.WriteLine("Rezervasyonunuzu iptal ettiniz..");
-                    Console.WriteLine(TekKisilik[i]);
+
                 }
-               
+
             }
-            for (int i = 0; i < 10; i++)
+            for (int i = 11; i < 20; i++)
             {
-                if (m == i)
+                int a = 1;
+                if (m == i && CiftKisilik[i] == 100)
                 {
-                    CiftKisilik[i] = i;
+                    CiftKisilik[a] = i;
+                    Console.WriteLine("Rezervasyonunuzu iptal ettiniz..");
                 }
             }
            

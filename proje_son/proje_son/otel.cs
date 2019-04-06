@@ -8,7 +8,6 @@ namespace proje_son
 
         public static int[] CiftKisilik = { 0, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
-         
 
         public  void Rezgonder(int x)  //Rezervasyon oda classına  gönderiliyor.
         {
@@ -28,10 +27,10 @@ namespace proje_son
         {
             int sayac = 0; //tek yataklı dolu oda sayısı
             int sayac2 = 0;//cift
-            double oran1;//toplam doluluk oranı
-            double oran2;//tek kisilik
-            double oran3;//cift kisilik
-            for (int i = 0; i < 10; i++)
+            double oran1=0;//toplam doluluk oranı
+            double oran2=0;//tek kisilik
+            double oran3=0;//cift kisilik
+            for (int i = 1; i < 11; i++)
             {
 
                 if (TekKisilik[i] == 100)   //oda dolu ise
@@ -39,23 +38,26 @@ namespace proje_son
                     sayac++;
 
                 }
+
+
             }
-            oran2 = 10 / sayac;
-            for (int i = 0; i < 10; i++)
+            oran2 = (sayac/10.0)*100;
+            for (int i = 1; i < 11 ; i++)
             {
                 if (CiftKisilik[i] == 100)
                 {
                     sayac2++;
 
                 }
+
             }
-            oran3 = 10 / sayac2;
-            oran1 = 20 / (sayac + sayac2);
 
-            Console.WriteLine("Oteldeki genel doluluk orani:" + +oran1);
-            Console.WriteLine("Tek kisilik odalardaki doluluk orani:" + +oran2);
-            Console.WriteLine("Cift kisilik odalardaki doluluk orani:" + +oran3);
+           oran3 = (sayac2/10.0)*100;
+            oran1 =(sayac+sayac2)/20.0*100;
 
+            Console.WriteLine("Oteldeki genel doluluk orani:%" +oran1);
+            Console.WriteLine("Tek kisilik odalardaki doluluk orani:%" +oran2);
+            Console.WriteLine("Cift kisilik odalardaki doluluk orani:%" +oran3);
             return 0;
         }
 

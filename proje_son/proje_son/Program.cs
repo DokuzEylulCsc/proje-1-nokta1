@@ -8,6 +8,7 @@ namespace proje_son
         {
 
             String A;
+
             int secim;
             do
             {
@@ -53,7 +54,6 @@ namespace proje_son
                 }
 
             } while (secim != 0);
-
         }
     }
 }
