@@ -8,8 +8,10 @@ namespace proje_son
 
         public static int[] CiftKisilik = { 0, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
+    
 
-        public  void Rezgonder(int x)  //Rezervasyon oda classına  gönderiliyor.
+
+        public void Rezgonder(int x)  //Rezervasyon oda classına  gönderiliyor.
         {
             oda o = new oda();
             o.RezYap(x);
@@ -35,7 +37,7 @@ namespace proje_son
 
                 if (TekKisilik[i] == 100)   //oda dolu ise
                 {
-                    sayac++;
+                    sayac++; // tek kisilik odalardan kaç tanesinin dolu olduğunu tutuyor
 
                 }
 
@@ -46,7 +48,7 @@ namespace proje_son
             {
                 if (CiftKisilik[i] == 100)
                 {
-                    sayac2++;
+                    sayac2++; // cift kisilik odalardan kaç tanesinin dolu olduğunu tutuyor
 
                 }
 

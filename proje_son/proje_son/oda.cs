@@ -3,11 +3,11 @@ namespace proje_son
 {
     public class oda:otel
     {
-       
 
 
-            
-     public  int  RezYap(int x)  //Rezervasyon gerçekleştiriliyor.
+
+
+        public  int  RezYap(int x)  //Rezervasyon gerçekleştiriliyor.
         {
             int a;
             for (int i = 0; i < 10; i++)   //

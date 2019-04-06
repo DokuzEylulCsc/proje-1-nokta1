@@ -3,7 +3,7 @@
 namespace proje_son
 {
     class MainClass
-    {
+    { 
         public static void Main(string[] args)
         {
 
@@ -18,7 +18,7 @@ namespace proje_son
                 Console.WriteLine("2-Rezervasyon Sil:");
                 Console.WriteLine("3-Odaların Doluluk Oranlarını Göster");
                 Console.WriteLine("Çıkmak İcin 0 a  Basınız.");
-                secim = Convert.ToInt16(Console.ReadLine());
+                secim = Convert.ToInt16(Console.ReadLine());// yapmak istediğimiz işlemi giriyoruz.
 
                 if (secim == 1)  // rezervasyon yapma seceneği
                 {
@@ -34,7 +34,7 @@ namespace proje_son
                     Console.WriteLine("--------------------------------------------------------------");
                     Console.WriteLine("Secmek istediginiz oda numarasını giriniz");
                     int x;
-                    x = Convert.ToInt16(Console.ReadLine());
+                    x = Convert.ToInt16(Console.ReadLine());// hangi odayı rezerve etmek istediğimizi giriyoruz.
                     r.Rezerve(x);
 
 

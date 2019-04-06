@@ -6,14 +6,14 @@ namespace proje_son
        
         public void Rezerve(int x)
         {
-            otel o1 = new otel();
+            otel o1 = new otel(); // rezervasyon istediğini otele iletiyor.
           o1.Rezgonder(x);
 
         }
         public  void Rezİp(int x)
         {
             otel o1 = new otel();
-            o1.Rezİptalgonder(x);
+            o1.Rezİptalgonder(x);// rezervasyon iptal isteğini otele iletiyor.
 
         }
 
