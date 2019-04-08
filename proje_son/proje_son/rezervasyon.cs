@@ -1,18 +1,18 @@
 ﻿using System;
 namespace proje_son
 {
-    public class rezervasyon
+    public class Rezervasyon
     {
        
         public static void Rezerve(int x)
         {
             // rezervasyon istediğini otele iletiyor.
-            otel.Rezgonder(x);
+            Otel.Rezgonder(x);
 
         }
         public static void Rezİp(int x)
         {
-            otel.Rezİptalgonder(x);
+            Otel.Rezİptalgonder(x);
             // rezervasyon iptal isteğini otele iletiyor.
 
         }
@@ -20,11 +20,15 @@ namespace proje_son
         public static void DolulukSor()
         {
 
-            otel.DolulukOrani();
+            Otel.DolulukOrani();
         }
         public static void RezGöster()
         {
-            otel.RezGöster();
+            Otel.RezGöster();
+        }
+        public static void RezTarihiGoster()
+        {
+            Otel.TarihGoster();
         }
     }
      

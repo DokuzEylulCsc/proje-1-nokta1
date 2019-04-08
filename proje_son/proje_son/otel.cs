@@ -1,12 +1,27 @@
 ﻿using System;
 namespace proje_son
 {
-    public abstract class otel
+    public abstract class Otel
     {
 
        public  static int[] TekKisilik = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
         public static int[] CiftKisilik = { 0, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
+        public static int[] Giris = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ,0,0,0,0,0,0,0,0,0,0,0};
+        public static int[] Cikis = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ,0,0,0,0,0,0,0,0,0,0,0};
+        public int GirisTarihi;
+        public int CikisTarihi;
+
+        public int giristarihi
+        {
+            get { return GirisTarihi; }
+            set { GirisTarihi = value; }
+        }
+        public int cikistarihi
+        {
+            get { return CikisTarihi; }
+            set { CikisTarihi = value; }
+        }
 
         abstract public  void DenizManzarali();
 
@@ -17,14 +32,14 @@ namespace proje_son
 
         public static void Rezgonder(int x)  //Rezervasyon oda classına  gönderiliyor.
         {
-            oda o = new oda();
+            Oda o = new Oda();
             o.RezYap(x);
 
 
         }
         public static int Rezİptalgonder(int m)//rez iptali oda classına gönderiliyor.(m hangi oda oldugu)
         {
-            oda o1 = new oda();
+            Oda o1 = new Oda();
             o1.Rezİptal(m);
             return 0;
         }
@@ -94,6 +109,28 @@ namespace proje_son
                 }
             }
             return 0;
+        }
+        public static int Tarih(int giris,int cikis,int s)
+        {
+            Giris[s] = giris;
+            Cikis[s] = cikis;
+            return 0;
+        }
+        public static void TarihGoster()
+        {   for (int i = 1; i < 21;i++)
+            {
+                if (Giris[i] != 0 && Cikis[i]!=0)
+                {
+                    Console.WriteLine(i + ". Odanın giris tarihi:" + Giris[i]);
+                    Console.WriteLine(i +". Odanın cikis tarihi:" + Cikis[i]);
+                }
+                else
+                {
+                    Console.WriteLine(i+ " - ");
+                }
+
+            }
+
         }
     }
    

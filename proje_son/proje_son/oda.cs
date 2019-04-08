@@ -1,7 +1,7 @@
 ﻿using System;
 namespace proje_son
 {
-    public class oda:otel
+    public class Oda:Otel
     {
         public override void DenizManzarali()
         {

@@ -8,10 +8,12 @@ namespace proje_son
         {
 
             String A;
-            
 
+            int sayac=0;
             int secim;
-            //int Manzaralimi;
+            int GirisTarihi;
+            int CikisTarihi;
+           
             do
             {
                 Console.WriteLine("Hosgeldiniz:");
@@ -20,7 +22,9 @@ namespace proje_son
                 Console.WriteLine("2-Rezervasyon Sil:");
                 Console.WriteLine("3-Odaların Doluluk Oranlarını Göster");
                 Console.WriteLine("4-Rezervasyonları Görüntüle");
+                Console.WriteLine("5-Odaların Rezerve Tarihlerini Göster");
                 Console.WriteLine("Çıkmak İcin 0 a  Basınız.");
+               
                 secim = Convert.ToInt16(Console.ReadLine());// yapmak istediğimiz işlemi giriyoruz.
 
                 if (secim == 1)  // rezervasyon yapma seceneği
@@ -29,7 +33,11 @@ namespace proje_son
                    
                     Console.WriteLine("Adınızı ve Soyadınızı Giriniz:");
                     A = Console.ReadLine();
-
+                    Console.WriteLine("Otele Giris Tarihinizi Giriniz:(Ay,yıl,gün olarak ayırmadan)");
+                    GirisTarihi = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Otelden Cikis Tarihinizi Giriniz:(Ay,yıl,gün olarak ayırmadan)");
+                    CikisTarihi = Convert.ToInt32(Console.ReadLine());
+                   
                     Console.WriteLine("Secenekli oda numaraları:");
                     Console.WriteLine("Tek kisilik Manzarasiz---->1-2");
                     Console.WriteLine("Tek kisilik Havuz Manzarali----->3-6");
@@ -41,10 +49,11 @@ namespace proje_son
                     Console.WriteLine("Secmek istediginiz oda numarasını giriniz");
                     int x;
                     x = Convert.ToInt16(Console.ReadLine());// hangi odayı rezerve etmek istediğimizi giriyoruz.
-                    rezervasyon.Rezerve(x);
+                    Rezervasyon.Rezerve(x);
                     Console.WriteLine("--------------------------------------------------------------");
-                   
-                   
+
+                    sayac++;
+                    Otel.Tarih(GirisTarihi, CikisTarihi,x);
 
 
                 }
@@ -54,17 +63,21 @@ namespace proje_son
                     Console.WriteLine("Rezerve ettiğinin oda numarasını giriniz");
                     int x;
                     x = Convert.ToInt16(Console.ReadLine());
-                    rezervasyon.Rezİp(x);
+                    Rezervasyon.Rezİp(x);
                 }
                 if (secim == 3)
                 {
 
-                    rezervasyon.DolulukSor();
+                    Rezervasyon.DolulukSor();
                 }
                 if(secim==4)
                 {
 
-                    rezervasyon.RezGöster();
+                    Rezervasyon.RezGöster();
+                }
+                if(secim==5)
+                {
+                    Rezervasyon.RezTarihiGoster();
                 }
 
             } while (secim != 0);
