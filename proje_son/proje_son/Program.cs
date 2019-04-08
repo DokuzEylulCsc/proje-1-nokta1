@@ -8,8 +8,10 @@ namespace proje_son
         {
 
             String A;
+            
 
             int secim;
+            //int Manzaralimi;
             do
             {
                 Console.WriteLine("Hosgeldiniz:");
@@ -17,40 +19,52 @@ namespace proje_son
                 Console.WriteLine("1-Yeni Rezervasyon");
                 Console.WriteLine("2-Rezervasyon Sil:");
                 Console.WriteLine("3-Odaların Doluluk Oranlarını Göster");
+                Console.WriteLine("4-Rezervasyonları Görüntüle");
                 Console.WriteLine("Çıkmak İcin 0 a  Basınız.");
                 secim = Convert.ToInt16(Console.ReadLine());// yapmak istediğimiz işlemi giriyoruz.
 
                 if (secim == 1)  // rezervasyon yapma seceneği
                 {
 
-                    rezervasyon r = new rezervasyon();
+                   
                     Console.WriteLine("Adınızı ve Soyadınızı Giriniz:");
                     A = Console.ReadLine();
 
-
-                    Console.WriteLine("--------------------------------------------------------------");
-                    Console.WriteLine("***Tek yataklı odalarımızın numaraları 1-10 arasındadır.***");
-                    Console.WriteLine("***Cift yataklı odalarımızın numaraları 11-20 arasındadır.***");
+                    Console.WriteLine("Secenekli oda numaraları:");
+                    Console.WriteLine("Tek kisilik Manzarasiz---->1-2");
+                    Console.WriteLine("Tek kisilik Havuz Manzarali----->3-6");
+                    Console.WriteLine("Tek kisilik Deniz Manzarali----->7-10");
+                    Console.WriteLine("Cift kisilik Manzarasiz---->11-12");
+                    Console.WriteLine("Cift kisilik Havuz Manzarali----->13-16");
+                    Console.WriteLine("Cift kisilik Deniz Manzarali----->17-20");
                     Console.WriteLine("--------------------------------------------------------------");
                     Console.WriteLine("Secmek istediginiz oda numarasını giriniz");
                     int x;
                     x = Convert.ToInt16(Console.ReadLine());// hangi odayı rezerve etmek istediğimizi giriyoruz.
-                    r.Rezerve(x);
+                    rezervasyon.Rezerve(x);
+                    Console.WriteLine("--------------------------------------------------------------");
+                   
+                   
 
 
                 }
                 if (secim == 2)//rezervasyon iptal
                 {
-                    rezervasyon r = new rezervasyon();
+                   
                     Console.WriteLine("Rezerve ettiğinin oda numarasını giriniz");
                     int x;
                     x = Convert.ToInt16(Console.ReadLine());
-                    r.Rezİp(x);
+                    rezervasyon.Rezİp(x);
                 }
                 if (secim == 3)
                 {
-                    rezervasyon r1 = new rezervasyon();
-                    r1.DolulukSor();
+
+                    rezervasyon.DolulukSor();
+                }
+                if(secim==4)
+                {
+
+                    rezervasyon.RezGöster();
                 }
 
             } while (secim != 0);

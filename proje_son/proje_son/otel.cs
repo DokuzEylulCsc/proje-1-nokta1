@@ -1,31 +1,35 @@
 ﻿using System;
 namespace proje_son
 {
-    public  class otel
+    public abstract class otel
     {
 
-        public static int[] TekKisilik = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+       public  static int[] TekKisilik = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
         public static int[] CiftKisilik = { 0, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
-    
+        abstract public  void DenizManzarali();
+
+        abstract public void HavuzManzarali();
+
+        abstract public void Manzarasiz();
 
 
-        public void Rezgonder(int x)  //Rezervasyon oda classına  gönderiliyor.
+        public static void Rezgonder(int x)  //Rezervasyon oda classına  gönderiliyor.
         {
             oda o = new oda();
             o.RezYap(x);
 
 
         }
-        public int Rezİptalgonder(int m)//rez iptali oda classına gönderiliyor.(m hangi oda oldugu)
+        public static int Rezİptalgonder(int m)//rez iptali oda classına gönderiliyor.(m hangi oda oldugu)
         {
             oda o1 = new oda();
             o1.Rezİptal(m);
             return 0;
         }
 
-        public int DolulukOrani()
+        public static int DolulukOrani()
         {
             int sayac = 0; //tek yataklı dolu oda sayısı
             int sayac2 = 0;//cift
@@ -62,8 +66,37 @@ namespace proje_son
             Console.WriteLine("Cift kisilik odalardaki doluluk orani:%" +oran3);
             return 0;
         }
+        public static int RezGöster()
+        {
+            Console.WriteLine("-----TEK KİSİLİK ODALAR-----");
+            for(int i=1;i<11;i++)
+            {
+                if(TekKisilik[i]==100)
+                {
+                    Console.WriteLine( i+".DOLU  ");
+                }
+                else
+                {
+                    Console.WriteLine(i+ ".*  ");
+                }
+            }
+            Console.WriteLine("-----CİFT KİSİLİK ODALAR-----");
+            for(int j=1;j<11;j++)
+            {
+                if(CiftKisilik[j]==100)
+                {
+                    Console.WriteLine(j+10 + ".DOLU ");
 
+                }
+                else
+                {
+                    Console.WriteLine(j+10 + ".* ");
+                }
+            }
+            return 0;
+        }
     }
+   
    
         }
 

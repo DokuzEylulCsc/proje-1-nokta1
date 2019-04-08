@@ -3,8 +3,8 @@
     <Files>
       <File FileName="proje_son/Program.cs" Line="33" Column="67" />
       <File FileName="proje_son/otel.cs" Line="35" Column="10" />
-      <File FileName="proje_son/rezervasyon.cs" Line="25" Column="11" />
-      <File FileName="proje_son/oda.cs" Line="7" Column="9" />
+      <File FileName="proje_son/rezervasyon.cs" Line="25" Column="1" />
+      <File FileName="proje_son/oda.cs" Line="6" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
